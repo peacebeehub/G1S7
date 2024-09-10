@@ -3,63 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Tutorials - Trigonometric Basics</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Trigonometry Site</title>
+   <link rel="stylesheet" type="text/css" href="styles.css"/>
     <style>
-         body {
+        /* Gradient Background */
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: white;
-            color: black;
+            background: linear-gradient(120deg, #0066ff, #00ccff);
+            color: #fff;
+background-image:url("bg4.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+        }
+
+        /* Container for the content */
+        .blue-container {
+        max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px; /* Space for fixed navbar */
-        }
-
-        .content {
-            padding: 20px;
-            background-color: white;
+        /* Dropdown Menu */
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
-        }
-
-        .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .video {
-            margin-bottom: 30px;
-        }
-
-        .video h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .video iframe {
-            width: 100%;
-            height: 315px;
-            border: none;
-            border-radius: 5px;
+            top: 40px;
+            left: 0;
+            padding: 10px 0;
         }
 
      
+
+        /* Welcome Section */
+        .welcome {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .welcome h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s;
+        }
+
+        .welcome p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            animation: fadeInUp 2s;
+        }
+
+        .welcome a {
+            padding: 15px 30px;
+            background-color: #0044cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .welcome a:hover {
+            background-color: #003399;
+        }
+
+        /* Featured Section */
+        .featured {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .featured img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            animation: jump 2s infinite;
+        }
+
+        .featured h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fadeInUp 2s;
+        }
+
+        .featured p {
+            font-size: 20px;
+            animation: fadeInUp 2s;
+        }
+
+     
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
     </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="nav-bar">
         <div class="logo">
             <a href="#"><img src="G1S7L.jpg" alt="Logo"></a>
@@ -129,48 +212,25 @@
             </li>
         </ul>
     </nav>
-
-
-
-    <!-- Trigonometric Basics Videos Content -->
-    <div class="container">
-        <div class="content">
-            <h2>Video Tutorials - Trigonometric Basics</h2>
-            <p>Welcome to the Trigonometric Basics video tutorials page. Here you'll find videos covering the fundamental concepts of trigonometry to help you build a strong foundation.</p>
-
-            <!-- Video 1 -->
-            <div class="video">
-                <h3>Introduction to Trigonometry</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PUB0TaZ7bhA?si=slJDjM5X9ckvgErr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            </div>
-
-            <!-- Video 2 -->
-            <div class="video">
-                <h3>The Unit Circle Explained</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nfFLiyE7M30?si=j31Ie2yHzBTY1ZHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            </div>
-
-            <!-- Video 3 -->
-            <div class="video">
-                <h3>Understanding Trigonometric Ratios</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9-eHMMpQC2k?si=edw3i8vrcjwv0P8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            </div>
-
-            <!-- Video 4 -->
-            <div class="video">
-                <h3>Basic Trigonometric Identities</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m1OitPmkydY?si=UK9t1FHzManjGMYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            </div>
-
-            <!-- Video 5 -->
-            <div class="video">
-                <h3>Introduction to Angle Measurements</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JmLN3QxshlE?si=aIPHRnE1roRCViPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            </div>
+    <!-- Welcome Section -->
+    <div class="welcome">
+       <div class="container">
+         <h1>Welcome to Trigonometry Hub!</h1>
+           <b> <p>Your one-stop destination for mastering trigonometry concepts, solving problems, and enhancing your mathematical skills.</p>
+            <a href="INTRO TO TRIGONOMETRY.HTML">Get Started</a></b>
         </div>
     </div>
 
-   <!-- Footer Section -->
+    <!-- Featured Content Section -->
+    <div class="featured">
+        <div class="container">
+         
+            <h2>Featured: The Unit Circle</h2>
+            <b><p>Explore the core concepts of the Unit Circle, a fundamental tool in trigonometry. Dive into interactive tutorials and practice problems designed to help you master this essential topic.</p>
+        </b></div>
+    </div>
+
+    <!-- Footer Section -->
     <div class="footer">
         <div class="container">
             <p>Follow us on <a href="https://t.me/G1S7_Trigonometry_Hub"><img src="tt.png" width="20" height="20">Telegram</a>, <a href="https://chat.whatsapp.com/KQ7oiEmDJitDEfjftI15XH"><img src="ww.jpg" width="20" height="20">WhatsApp</a>, <a href="https://www.youtube.com/@peacebee1"><img src="yy.jpg" width="20" height="20">YouTube</a></p>
